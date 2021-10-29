@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,8 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".MainActivity">
-
+    tools:context=".HasilActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,53 +24,64 @@
         android:layout_height="wrap_content"
         android:text="Nama"
         />
-    <EditText
-        android:id="@+id/namaEditText"
+    <TextView
+        android:id="@+id/namaTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Silahkan isi Nama Lengkap..."
-        android:inputType="textPersonName"
-        android:layout_marginBottom="8dp"
+        android:text="Nama"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NPM"
         />
-    <EditText
-        android:id="@+id/npmEditText"
+    <TextView
+        android:id="@+id/npmTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Silahkan isi NPM..."
-        android:inputType="number"
-        android:layout_marginBottom="8dp"
+        android:text="NPM"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kelas"
         />
-    <EditText
-        android:id="@+id/kelasEditText"
+    <TextView
+        android:id="@+id/kelasTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Silahkan isi Kelas..."
-        android:inputType="textPersonName"
-        android:layout_marginBottom="8dp"
+        android:text="Kelas"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
         />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Handphone"
         />
-    <EditText
-        android:id="@+id/handphoneEditText"
+    <TextView
+        android:id="@+id/handphoneTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Silahkan isi Nomor HP..."
-        android:inputType="phone"
-        android:layout_marginBottom="8dp"
+        android:text="Handphone"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
         />
 
     <TextView
@@ -80,54 +89,31 @@
         android:layout_height="wrap_content"
         android:text="Mata Kuliah"
         />
-    <EditText
-        android:id="@+id/matkulEditText"
+    <TextView
+        android:id="@+id/matkulTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Silahkan isi Mata Kuliah..."
-        android:inputType="text"
-        android:layout_marginBottom="8dp"
+        android:text="Mata Kuliah"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hobi"
         />
-    <EditText
-        android:id="@+id/hobiEditText"
+    <TextView
+        android:id="@+id/hobiTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Silahkan isi Hobi..."
-        android:inputType="text"
-        android:layout_marginBottom="8dp"
+        android:text="Hobi"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
         />
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="end"
-        >
-        <Button
-            android:id="@+id/simpanButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Simpan"
-            android:backgroundTint="@color/info"
-            android:drawableLeft="@drawable/ic_baseline_save_24"
-            android:layout_marginEnd="8dp"
-            ></Button>
-        <Button
-            android:id="@+id/batalButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/warning"
-            android:drawableLeft="@drawable/ic_baseline_cancel_24"
-            android:text="Batal"
-            ></Button>
-    </LinearLayout>
-
-
 </LinearLayout>
-
