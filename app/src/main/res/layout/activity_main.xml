@@ -64,20 +64,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Handphone"
-        />
-    <EditText
-        android:id="@+id/handphoneEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Silahkan isi Nomor HP..."
-        android:inputType="phone"
-        android:layout_marginBottom="8dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Mata Kuliah"
         />
     <EditText
@@ -113,10 +99,19 @@
             android:id="@+id/simpanButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Simpan"
+            android:text="Save"
             android:backgroundTint="@color/info"
             android:drawableLeft="@drawable/ic_baseline_save_24"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="5dp"
+            ></Button>
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:backgroundTint="@color/red"
+            android:drawableLeft="@drawable/ic_baseline_format_clear_24"
+            android:layout_marginEnd="5dp"
             ></Button>
         <Button
             android:id="@+id/batalButton"
@@ -124,7 +119,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/warning"
             android:drawableLeft="@drawable/ic_baseline_cancel_24"
-            android:text="Batal"
+            android:text="Exit"
+
             ></Button>
     </LinearLayout>
 

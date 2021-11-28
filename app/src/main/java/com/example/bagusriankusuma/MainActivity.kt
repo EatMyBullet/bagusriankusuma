@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         val simpanButton = findViewById<Button>(R.id.simpanButton)
         val batalButton = findViewById<Button>(R.id.batalButton)
+        val clearButton = findViewById<Button>(R.id.clearButton)
 
         val namaEditText = findViewById<EditText>(R.id.namaEditText)
         val npmEditText = findViewById<EditText>(R.id.npmEditText)
         val kelasEditText = findViewById<EditText>(R.id.kelasEditText)
-        val handphoneEditText = findViewById<EditText>(R.id.handphoneEditText)
         val matkulEditText = findViewById<EditText>(R.id.matkulEditText)
         val hobiEditText = findViewById<EditText>(R.id.hobiEditText)
 
@@ -29,21 +29,27 @@ class MainActivity : AppCompatActivity() {
             val nama = namaEditText.text.toString()
             val npm = npmEditText.text.toString().toInt()
             val kelas = kelasEditText.text.toString()
-            val handphone = handphoneEditText.text.toString().toInt()
             val matkul = matkulEditText.text.toString()
             val hobi = hobiEditText.text.toString()
 
 
-            Toast.makeText(this,"Hallo Bagus Rian Kusuma",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Data Berhasil Disimpan!",Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this,HasilActivity::class.java)
             intent.putExtra("nama",nama)
             intent.putExtra("npm",npm)
             intent.putExtra("kelas",kelas)
-            intent.putExtra("handphone",handphone)
             intent.putExtra("matkul",matkul)
             intent.putExtra("hobi",hobi)
             startActivity(intent)
+        }
+
+        clearButton.setOnClickListener{
+            namaEditText.setText("")
+            npmEditText.setText("")
+            kelasEditText.setText("")
+            matkulEditText.setText("")
+            hobiEditText.setText("")
         }
 
         batalButton.setOnClickListener{
